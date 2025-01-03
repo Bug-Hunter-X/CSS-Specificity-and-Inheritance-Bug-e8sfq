@@ -1,0 +1,11 @@
+To solve the unexpected color rendering, make sure the rules are clearly defined with more precision:
+.container { color: blue; }
+.container p { color: red !important; }
+/*or the following, ensuring the order of precedence*/
+p{color:green;}
+.container p{color:red;}
+
+/* or to completely avoid the unexpected behavior, avoid using inheritance and be explicit in your selectors. */
+.container { color: blue; }
+.container p { color: red; }
+.container span{color:green;} /*Example with specificity*/
