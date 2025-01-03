@@ -1,0 +1,1 @@
+The following CSS code snippet demonstrates an uncommon error related to specificity and inheritance:  .container { color: blue; } .container p { color: red; } p { color: green; } This will result in the text within a paragraph inside the container being green, not red.  The error is subtle because inheritance and specificity are both at play.
